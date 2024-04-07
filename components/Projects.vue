@@ -24,7 +24,7 @@
           <button
             @click="
               openLeft('left', {
-                name: '00',
+                name: '',
                 project: 0,
               })
             "
@@ -46,7 +46,7 @@
           <button
             @click="
               openLeft('left', {
-                name: '01',
+                name: '',
                 project: 1,
               })
             "
@@ -68,7 +68,7 @@
           <button
             @click="
               openLeft('left', {
-                name: '02',
+                name: '',
                 project: 2,
               })
             "
@@ -95,7 +95,7 @@
           <button
             @click="
               openRight('Right', {
-                name: '10',
+                name: '',
                 project: 10,
               })
             "
@@ -117,7 +117,7 @@
           <button
             @click="
               openRight('Right', {
-                name: '11',
+                name: '',
                 project: 11,
               })
             "
@@ -139,7 +139,7 @@
           <button
             @click="
               openRight('Right', {
-                name: '12',
+                name: '',
                 project: 12,
               })
             "
