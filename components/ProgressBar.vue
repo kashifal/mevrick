@@ -30,7 +30,7 @@ const percentageText = computed(() => `${Math.round(props.value * 100)}%`);
   left: 0;
   height: 100%;
   z-index: 12000;
-  transition: transform 0.6s ease-in-out; /* Add smooth transition for transform */
+  transition: transform 1s ease-in; /* Add smooth transition for transform */
 }
 
 .blue {

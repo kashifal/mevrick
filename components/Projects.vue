@@ -651,15 +651,18 @@
       </section>
     </div>
   </aside>
-  <button
+
+  <a
+    :href="section === 'section-0' ? '#projects' : '#intro'"
     @click="closeAside"
+    style="text-decoration: none"
     :class="[
       active === 'left' ? 'left' : active === 'right' ? 'right' : '',
       `position-button ${activeLink}`,
     ]"
   >
     ◀
-  </button>
+  </a>
   <button disabled :class="[`chat-button ${section}`]">
     <div class="chat-button-label">
       <p>{{ text }}</p>
@@ -729,15 +732,19 @@ const openRight = (x, value) => {
 };
 
 // Function to close the aside section
-const closeAside = () => {
+const closeAside = (e) => {
   if (active.value === "left") {
     left.value = false;
     active.value = null;
+
+    e.preventDefault();
   } else if (active.value === "right") {
     right.value = false;
     active.value = null;
+    e.preventDefault();
   } else {
     //go to top of the page smoothly
+
     window.scrollTo({
       top: 0,
       behavior: "smooth", // This makes the scroll smooth
