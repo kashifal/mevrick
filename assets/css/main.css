@@ -477,7 +477,7 @@ body {
   gap: 30px;
   overflow: hidden;
   max-width: 100%;
-  padding: 100px 100px !important;
+  padding: 100px 0px !important;
 }
 
 .skills-section h2 {
@@ -813,7 +813,6 @@ body {
   flex-wrap: wrap;
   max-width: 800px;
   margin: auto;
-  padding-bottom: 30px;
 }
 
 .about-section h2 {
